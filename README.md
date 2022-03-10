@@ -9,7 +9,7 @@ Clone the project
 git clone https://github.com/tekchapagain/preetiToUnicode
 
 ```
-Run the command at the terminal:
+Run the following command at the terminal:
 ```
 python preetiToUnicode.py 
 
