@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-import argparse
-import os
-import sys
 
 unicodeatoz=["ब","द","अ","म","भ","ा","न","ज","ष्","व","प","ि","फ","ल","य","उ","त्र","च","क","त","ग","ख","ध","ह","थ","श"]
 unicodeAtoZ=["ब्","ध","ऋ","म्","भ्","ँ","न्","ज्","क्ष्","व्","प्","ी","ः","ल्","इ","ए","त्त","च्","क्","त्","ग्","ख्","ध्","ह्","थ्","श्"]
@@ -63,7 +60,7 @@ def normalizePreeti(preetitext):
         character=preetitext[index]
         try:
             if preetitxt[index+2] == '{':
-                if preetitext[index+1] == 'f' or preetitext[index+1] == 'ो':
+                if preetitext[index + 1] in ('f', 'ो'):
                     normalized+='{'+character+preetitext[index+1]
                     index+=2
                     continue
@@ -87,7 +84,7 @@ def convert(inputfile):
 
     converted=''
     normalizedpreeti=normalizePreeti(preeti)
-    for index, character in enumerate(normalizedpreeti):
+    for character in enumerate(normalizedpreeti):
         try:
             if ord(character) >= 97 and ord(character) <= 122:
                 converted+=unicodeatoz[ord(character)-97]
