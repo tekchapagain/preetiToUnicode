@@ -3,7 +3,8 @@ A Simple Preeti to Unicode Converter by using python.
 
 # Getting Started
 
-https://img.shields.io/github/issues/tekchapagain/preetiToUnicode
+[![GitHub issues](https://img.shields.io/github/issues/tekchapagain/preetiToUnicode)](https://github.com/tekchapagain/preetiToUnicode/issues)
+
 Clone the project
 
 ```
