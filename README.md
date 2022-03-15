@@ -1,8 +1,9 @@
 # Preeti To Unicode Converter
 A Simple Preeti to Unicode Converter by using python.
 
-# Getting Started
+![alt-text](https://github.com/tekchapagain/preetiToUnicode/blob/main/output.gif)
 
+# Getting Started
 
 Clone the project
 
